@@ -286,6 +286,11 @@ main {
   .button-container {
     width: 100%;
   }
+    #toastBox {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+  }
 }
 @media screen and (max-width: 1200px) {
   .container-book {
