@@ -258,6 +258,8 @@ main {
 }
 
 .toast::after {
+  border-radius: 5px;
+  content: '';
   position: absolute;
   left: 0;
   bottom: 0;
@@ -273,6 +275,10 @@ main {
   }
 }
 
+.toast.error::after{
+  background: red;
+}
+
 @media screen and (max-width: 820px) {
   main {
     flex-direction: column;
@@ -285,11 +291,6 @@ main {
   }
   .button-container {
     width: 100%;
-  }
-    #toastBox {
-    position: fixed;
-    bottom: 0px;
-    right: 0px;
   }
 }
 @media screen and (max-width: 1200px) {
