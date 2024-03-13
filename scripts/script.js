@@ -79,7 +79,7 @@ function makeShelf(bookObj) {
 
     const removeButton = document.createElement("button");
     removeButton.classList.add("remove-button");
-    removeButton.innerHTML = "<i class='fa-solid fa-trash'></i><a> Hapus </a>";
+    removeButton.innerHTML = "<a> Hapus </a><i class='fa-solid fa-trash'></i>";
     removeButton.addEventListener("click", () => {
         removeFromStorage(id);
     });
@@ -87,7 +87,7 @@ function makeShelf(bookObj) {
         const unreadButton = document.createElement("button");
         unreadButton.classList.add("unread-button");
         unreadButton.innerHTML =
-            "<i class='fa-solid fa-retweet'></i><a>Belum Dibaca</a>";
+            "<a>Belum Dibaca</a><i class='fa-solid fa-retweet'></i>";
         unreadButton.addEventListener("click", () => {
             removeFromUnread(id);
         });
@@ -98,7 +98,7 @@ function makeShelf(bookObj) {
         const readButton = document.createElement("button");
         readButton.classList.add("read-button");
         readButton.innerHTML =
-            "<i class='fa-solid fa-circle-check'></i><a>Sudah Dibaca</a>";
+            "<a>Sudah Dibaca</a><i class='fa-solid fa-circle-check'></i>";
         readButton.addEventListener("click", () => {
             addToRead(id);
         });
